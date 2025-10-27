@@ -22,7 +22,7 @@ function Projects() {
 gsap.registerPlugin(ScrollTrigger);
   useGSAP(function(){
     gsap.from('.projectGrid',{
-      height:'25px',
+      height:'100px',
       stagger:{
         amount:0.2
       },
@@ -30,7 +30,7 @@ gsap.registerPlugin(ScrollTrigger);
         trigger:'.allProjects',
         start:'top 100%',
         end:'top -150%',
-        scrub:true
+        scrub:true,
       }
     })
   })
@@ -40,7 +40,7 @@ gsap.registerPlugin(ScrollTrigger);
       <div className='md:-mt-17 -mt-5 allProjects'>
         {
           peojects.map(function (elem, idx) {
-            return <div key={idx} className='projectGrid grid md:grid-cols-2 h-110 gap-3 mt-3'>
+            return <div key={idx} className='projectGrid grid md:grid-cols-2 h-140 gap-3 mt-3'>
               <ProjectsCard image1={elem.image1} image2={elem.image2}/>
             </div> 
           })
