@@ -116,7 +116,7 @@ function FullWidthNav({ onClose }) {
                                             <span className="leading-[8vw] -mb-3">Pour tout voir</span>
                                             <img
                                                 className="w-65 h-22 object-cover rounded-full"
-                                                src="../../public/images/header-img.jpg"
+                                                src="../../images/header-img.jpg"
                                                 alt=""
                                             />
                                         </div>
