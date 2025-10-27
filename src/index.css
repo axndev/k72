@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: font1;
+    src: url('../public/fonts/Lausanne-300.woff2');
+}
+@font-face {
+    font-family: font2;
+    src: url('../public/fonts/Lausanne-500.woff2');
+}
+
+body{
+    padding:0;
+    margin:0;
+    overflow-x:hidden;
+    background: #111;
+    color: white;
+}
+.moveX{
+    animation: moveX 5s infinite linear;
+    z-index: 999;
+}
+
+@keyframes moveX {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
