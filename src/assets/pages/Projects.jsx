@@ -36,11 +36,11 @@ gsap.registerPlugin(ScrollTrigger);
   })
   return (
     <div className=' px-3'>
-      <h2 className='pt-60 text-[13vw] uppercase font-[font1]'>Projets</h2>
-      <div className='-mt-17 allProjects'>
+      <h2 className='md:pt-60 pt-30 text-[13vw] uppercase font-[font1]'>Projets</h2>
+      <div className='md:-mt-17 -mt-5 allProjects'>
         {
           peojects.map(function (elem, idx) {
-            return <div key={idx} className='projectGrid grid grid-cols-2 h-110 gap-3 mt-3'>
+            return <div key={idx} className='projectGrid grid md:grid-cols-2 h-110 gap-3 mt-3'>
               <ProjectsCard image1={elem.image1} image2={elem.image2}/>
             </div> 
           })
