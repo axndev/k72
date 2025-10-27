@@ -71,7 +71,7 @@ function FullWidthNav({ onClose }) {
             <div className="w-full">
                 {/* Top Bar */}
                 <div className="headerLogo p-2 flex fixed top-0 w-full justify-between items-center z-10">
-                    <div onClick={navClose} className="w-29 -mt-18">
+                    <div onClick={navClose} className="w-29 -mt-2 md:-mt-18">
                         <Link to="/">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -86,10 +86,10 @@ function FullWidthNav({ onClose }) {
                     {/* Close Button */}
                     <div
                         onClick={handleClose}
-                        className="closeBtn flex justify-center items-center h-30 w-30 relative pr-3 cursor-pointer group"
+                        className="closeBtn flex justify-center items-center md:h-30 md:w-30 w-20 h-15 relative pr-3 cursor-pointer group"
                     >
-                        <div className="h-36 w-[2px] bg-white rotate-45 group-hover:bg-[#D3FD50] absolute"></div>
-                        <div className="h-36 w-[2px] bg-white -rotate-45 group-hover:bg-[#D3FD50] absolute"></div>
+                        <div className="md:h-36 h-15 w-[2px] bg-white rotate-45 group-hover:bg-[#D3FD50] absolute"></div>
+                        <div className="md:h-36 h-15 w-[2px] bg-white -rotate-45 group-hover:bg-[#D3FD50] absolute"></div>
                     </div>
                 </div>
 
@@ -102,7 +102,7 @@ function FullWidthNav({ onClose }) {
                         <div
                             onClick={navClose}
                             key={i}
-                            className={`link origin-top text-[7.5vw] uppercase font-[font2] border-t w-full group border-white leading-[8vw] -mb-3 relative ${label === "Blog" ? "border-b leading-[85px] pt-2" : ""
+                            className={`link origin-top text-[7.5vw] uppercase font-[font2] border-t w-full group border-white md:leading-[8vw] -mb-3 pb-2 md:pb-0relative ${label === "Blog" ? "border-b md:leading-[85px] md:pt-2 !pb-0" : ""
                                 }`}
                         >
                             <Link to={`/${label.toLowerCase()}`} className="-mb-4">
