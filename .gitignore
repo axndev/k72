@@ -1,67 +1,24 @@
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# build output
-/dist
-/build
-/out
-/.next
-/.nuxt
-/public/build
-
-# system files
-.DS_Store
-Thumbs.db
-
-# logs
+# Logs
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+lerna-debug.log*
 
-# environment variables
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+node_modules
+dist
+dist-ssr
+*.local
 
-# IDE / editor settings
-.vscode/
-.idea/
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-
-# testing
-/coverage
-
-# optional caches
-/.eslintcache
-/.parcel-cache
-/.turbo
-/.vite
-/.cache
-/.next/cache
-
-# local files
-*.local
-*.log
-
-# misc
-*.bak
-*.tmp
-*.temp
-*.pid
-
-# macOS
-.AppleDouble
-.LSOverride
-
-# Windows
-ehthumbs.db
-Desktop.ini
