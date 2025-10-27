@@ -22,7 +22,7 @@ function Header() {
       </div>
       <div
         onClick={() => setMenu(prev => !prev)} // toggle the menu
-        className='bg-black w-[16vw] h-12 relative group flex justify-end items-center cursor-pointer'
+        className='bg-black md:w-[16vw] w-[40vw] h-12 relative group flex justify-end items-center cursor-pointer'
       >
         <div className='absolute top-0 w-full h-0 group-hover:h-full transition-all bg-[#D3FD50]'></div>
         <div className='mr-9 flex justify-end flex-col items-end gap-[4px] z-2'>
