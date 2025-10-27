@@ -1,0 +1,67 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# build output
+/dist
+/build
+/out
+/.next
+/.nuxt
+/public/build
+
+# system files
+.DS_Store
+Thumbs.db
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE / editor settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# testing
+/coverage
+
+# optional caches
+/.eslintcache
+/.parcel-cache
+/.turbo
+/.vite
+/.cache
+/.next/cache
+
+# local files
+*.local
+*.log
+
+# misc
+*.bak
+*.tmp
+*.temp
+*.pid
+
+# macOS
+.AppleDouble
+.LSOverride
+
+# Windows
+ehthumbs.db
+Desktop.ini

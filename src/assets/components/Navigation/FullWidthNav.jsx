@@ -107,7 +107,7 @@ function FullWidthNav({ onClose }) {
                         >
                             <Link to={`/${label.toLowerCase()}`} className="-mb-4">
                                 {label}
-                                <div className={`flex gap-5 overflow-hidden absolute top-0 bg-[#D3FD50] h-0 group-hover:h-[90%] opacity-0 group-hover:opacity-100 transition-all duration-200 text-black ${label === "Blog" ? "group-hover:h-[100%]" : ""}`}>
+                                <div className={`flex gap-5 overflow-hidden absolute top-0 bg-[#D3FD50] h-0 group-hover:h-[90%] opacity-0 group-hover:opacity-100 transition-all duration-200 text-black ${label === "Blog" ? "group-hover:h-full" : ""}`}>
                                     {[...Array(2)].map((_, j) => (
                                         <div
                                             key={j}
